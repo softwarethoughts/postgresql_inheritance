@@ -6,6 +6,17 @@ DO $$
 	DECLARE _publishable_id UUID;
 	DECLARE _user_id UUID[];
 BEGIN
+	_content := 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ';
+
+	_title := 'Lorem ipsum dolor sit ';
+
+	count := 0;
+	WHILE count < 1000000 LOOP
+		INSERT INTO user_profile (id, time_modified, is_public) VALUES (uuid_generate_v4(), NOW(), FALSE);
+		INSERT INTO blog_article (id, time_modified, is_public, title, content) VALUES (uuid_generate_v4(), NOW(), FALSE, _title || count::TEXT, _content || count::TEXT);
+		count := count + 1;
+	END LOOP;
+
 	WITH user_id AS (
 		INSERT INTO "user" (id, username) VALUES(uuid_generate_v4(), 'user1')
 		RETURNING id
