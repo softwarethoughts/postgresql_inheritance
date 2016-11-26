@@ -47,8 +47,8 @@ BEGIN
 		INNER JOIN pg_class p ON v.tableoid = p.oid
 		WHERE v.id = _publishable_id;
 
-		EXECUTE FORMAT('INSERT INTO %I (publishable_id, user_id, read, write) VALUES (uuid_generate_v4(), $1, TRUE, TRUE)',
-		'permission_' || _relname) USING _user_id[count];
+		EXECUTE FORMAT('INSERT INTO %I (publishable_id, user_id, read, write) VALUES ($1, $2, TRUE, TRUE)',
+		'permission_' || _relname) USING _publishable_id, _user_id[count];
 
 		count := count + 1;
 	END LOOP;
