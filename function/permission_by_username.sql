@@ -1,4 +1,4 @@
-﻿--
+--
 --	Get users permission on an publishable entity.
 --
 --	@params _publishable_id		The id of the entity

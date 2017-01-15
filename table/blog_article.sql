@@ -1,6 +1,6 @@
-﻿/**
- *	This table contains publishable blog articles.
- */
+--
+--	This table contains publishable blog articles.
+--
 CREATE TABLE blog_article
 (
 	title TEXT,

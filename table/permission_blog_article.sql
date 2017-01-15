@@ -1,6 +1,6 @@
-﻿﻿/**
-*	This table contains permissions of blog articles.	
-*/
+--
+--	This table contains permissions of blog articles.	
+--
 CREATE TABLE permission_blog_article
 (
 -- Inherited from table permission:  publishable_id uuid NOT NULL,

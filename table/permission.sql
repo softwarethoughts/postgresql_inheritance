@@ -1,6 +1,6 @@
-﻿﻿/**
-*	This table contains permissions of publishable entities.	
-*/
+--
+--	This table contains permissions of publishable entities.	
+--
 CREATE TABLE permission
 (
   publishable_id uuid NOT NULL,

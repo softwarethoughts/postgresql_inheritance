@@ -1,6 +1,6 @@
-﻿/**
-*	This table contains publishable user profiles.	
-*/
+--
+--	This table contains publishable user profiles.	
+--
 CREATE TABLE user_profile
 (
 	firstname text,

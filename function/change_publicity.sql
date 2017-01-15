@@ -1,9 +1,9 @@
-﻿/**
-*	Change the publicity of publishable entities.
-*
-*	@params _id		The id of the entity
-*	@params _is_public	TRUE if new status is public, FALSE if not 
-*/
+--
+--	Change the publicity of publishable entities.
+--
+--	@params _id		The id of the entity
+--	@params _is_public	TRUE if new status is public, FALSE if not 
+--
 CREATE FUNCTION change_publicity(_id UUID, _is_public BOOLEAN)
 RETURNS VOID AS
 $$

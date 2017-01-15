@@ -1,6 +1,6 @@
-﻿﻿﻿/**
-*	This table contains permissions of user profiles.	
-*/
+--
+--	This table contains permissions of user profiles.	
+--
 CREATE TABLE permission_user_profile
 (
 -- Inherited from table permission:  publishable_id uuid NOT NULL,

@@ -1,7 +1,7 @@
-/**
- * Table users
- */
-CREATE TABLE public."user"
+--
+-- Table users
+--
+CREATE TABLE "user"
 (
   id uuid NOT NULL,
   username character varying,

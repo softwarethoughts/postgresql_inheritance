@@ -1,8 +1,8 @@
-﻿--
+--
 --	Get users permission on an publishable entity.
 --
 --	@params _publishable_id		The id of the entity
---	@params _username			The username to get the permissions for 
+--	@params _username		The username to get the permissions for 
 CREATE FUNCTION permissions_by_username_pg_class(_publishable_id UUID, _username CHARACTER VARYING)
 RETURNS SETOF permission AS
 $$

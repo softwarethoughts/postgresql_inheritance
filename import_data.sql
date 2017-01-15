@@ -1,3 +1,5 @@
+-- Data import for PostgreSQL inheritance tutorial
+
 DO $$
 	DECLARE _relname CHARACTER VARYING;
 	DECLARE count INTEGER;
